@@ -1,7 +1,8 @@
 class App < Sinatra::Base
     
     get '/' do
-        "Hola!"
+        @time = Time.now
+        erb :clock
     end
     
     get '/upcase/:eng_word' do | eng_word |
@@ -70,5 +71,5 @@ class App < Sinatra::Base
     #3 Visa hur många månader det, idag, är kvar på året 
     #4 Lägg till fler räknesätt och / eller utöka räknaren på andra sätt
     #
-    #5 Bygg en rövarspråks-metod https://barnensbibliotek.se/artiklar/lar-dig-rovarspraket
+    #5 Bygg en rövarspråksgenerator för ett ord https://barnensbibliotek.se/artiklar/lar-dig-rovarspraket
 end

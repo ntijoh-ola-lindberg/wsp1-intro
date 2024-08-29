@@ -16,3 +16,9 @@ end
 task :test do
     #todo
 end
+
+#sudo rake kill med lösenordet wsp
+#todo testa på windowsdator
+task :kill do
+    sh 'killall ruby && killall rack && killall rerun'
+end

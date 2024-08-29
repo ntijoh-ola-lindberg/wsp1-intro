@@ -1,16 +1,23 @@
 body {
-    font-family: serif;
-    color: #333;
+    font-family: sans-serif;
+    color: #666;
     background-color: #F1F1F1;
-    font-size: xx-large;
+    font-size: xxx-large;
+    margin: 1em;
 }
 
-h1,
-h2,
-h3 {
-    font-family: sans-serif;
+strong {
+    color: black;
+}
+
+a {
+    color: #008080;
 }
 
 form {
     display: inline-block;
+}
+
+img {
+    max-width: 100%;
 }

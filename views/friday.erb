@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clock</title>
+    <title>Is it Friday?</title>
     <link rel="stylesheet" type="text/css" href="/style.css?<%=Time.now.to_i%>"> 
 </head>
 <body>
     <main>
-        <h2>H E L L O !</h2>
-        <p>Current date and time is: <strong><%= @time %></strong></p>
-        <p><a href="/">Reload</a>
-        <hr>
-        <img src="/img/slash-request.png">
+
+<h2>Is it Friday?</h2>
+<%if @friday %>
+    <h1>Yes</h1>
+<%else %>
+    <h1>No</h1>
+<% end %>
     </main>
 </body>
 </html>

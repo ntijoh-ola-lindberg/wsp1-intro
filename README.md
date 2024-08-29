@@ -2,7 +2,7 @@
 Första exempel och övningar i kursen Webbserverprogrammering 1 på NTI Gymnasiet Johanneberg. 
 Efter genomgång görs övningar nedan i par.
 
-* Ladda ner repositoriet till mappen Webbserverprogramering på din dator: `git clone https://github.com/ntijoh-ola-lindberg/wsp-1.git`
+* Ladda ner zip-filen https://github.com/ntijoh-ola-lindberg/wsp-1/archive/refs/heads/main.zip eller repositoriet (`git clone https://github.com/ntijoh-ola-lindberg/wsp-1.git`) till mappen Webbserverprogramering på din dator.
 * Installera: `bundle install`
 * Köra: `rake dev`
 * Surfa till: http://localhost:9292

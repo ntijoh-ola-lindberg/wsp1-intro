@@ -8,7 +8,7 @@ Efter genomgång görs övningar nedan i par.
 * Surfa till: http://localhost:9292
 
 ## Uppgifter i par
-1. Skapa en *Is it Friday?* Utgå från routen `/friday`
+1. Skapa en *Is it Friday?* Utgå från routen `/friday`. Bonusuppgift - gör även "no it's monday today".
 2. Lägg till så alla 12 månader funkar i routen `/num_to_month/:num`
 3. Skriv ut hur många månader det är kvar på året ifrån månaden `:num`
 4. Utöka räknaren så den t.ex. kan fler räknesätt

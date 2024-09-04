@@ -1,4 +1,4 @@
-# Webbserverprogrammering 1
+# Webbserverprogrammering 1 - Övning 1
 Första exempel och övningar i kursen Webbserverprogrammering 1 på NTI Gymnasiet Johanneberg. 
 Efter genomgång görs övningar nedan i par.
 

@@ -93,19 +93,8 @@ class App < Sinatra::Base
     # "b" blir "bob" på rövarspråket.
     get '/rovarsprak/:word' do | word |
         @ord = word
-        @chars = word.chars
-
-        konsonanter = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v","w", "x", "z"]
-
-        @rovarord = ""
-
-        @chars.each do |c| 
-            if konsonanter.include?(c)
-                @rovarord += + c + "o" + c
-            else 
-                @rovarord += + c
-            end
-        end
+        
+        #TODO: Bygg en rövarspråksgenerator
     
         erb :rovarsprak
     end

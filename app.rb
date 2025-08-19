@@ -12,12 +12,6 @@ class App < Sinatra::Base
         erb :clock
     end
 
-    # Skapa en Is it Friday? utifrån följande Route.
-    get '/friday' do
-        @friday = Time.now().friday?
-        erb :friday
-    end
-
     # Routen gör om ord till VERSALER
     # Notera att ingen ERB-fil visas. Istället råkar 
     # bara sista ordet som skrevs ut synas på webbsidan.
@@ -74,26 +68,29 @@ class App < Sinatra::Base
         erb :math
     end
 
-    # Routen är ett (teoretiskt) exempel bara för att visa 
-    # att det går att skapa väldigt mycket HTML med en 
-    # loop (i ERB-filen).
-    get '/colors' do
-        erb :colors
+    # Routen visar Yes om det är fredag - No annars. 
+    #
+    # Todo: Lägg till så routen istället för bara yes och no visar
+    # Is it Friday - no it is Monday, Tuesday, Wednesday, etc.
+    get '/friday' do
+        @friday = Time.now().friday?
+        erb :friday
     end
 
     # Routen gör om ordet till Rövarspråket. 
     #
     # Efter varje konsonant lägger du till bokstaven ”o” 
-    # och sedan samma konsonant en gång till.
+    # och sedan samma konsonant en gång till. 
     # "b" blir "bob" på rövarspråket.
-        # Routen gör om ordet till Rövarspråket. 
     #
-    # Efter varje konsonant lägger du till bokstaven ”o” 
-    # och sedan samma konsonant en gång till.
-    # "b" blir "bob" på rövarspråket.
+    # hej   -> hohejoj
+    # glass -> goglolasossos
+    # frukt -> fofrorukoktot
     get '/rovarsprak/:word' do | word |
         @ord = word
-        
+
+        @rovarord = "totododo"
+
         #TODO: Bygg en rövarspråksgenerator
     
         erb :rovarsprak

@@ -8,8 +8,15 @@ Efter genomgång görs övningar nedan i par.
 * Surfa till: http://localhost:9292
 
 ## Uppgifter i par
-1. Utöka *Is it Friday?* (routen `/friday`) så den även kan skriva ut vilken dag det är idag som t.ex. "No it is Monday".
-2. Lägg till så alla 12 månader funkar i routen `/num_to_month/:num`
-3. Skriv ut hur många månader det är kvar på året ifrån månaden `:num`
-4. Utöka räknaren så den t.ex. kan fler räknesätt
+1. Skapa en *Is it Friday?* Utgå från routen `/friday`. Gör även "no it's monday / tuesday / wednesday / ... today".
+2. Lägg till så alla 12 månader funkar i routen `/num_to_month/:num` Skriv även ut hur många månader det är kvar på året ifrån månaden `:num`
+4. Routen `/add/:first/:second` är en enkel räknare som kan subtraktion. Bygg räknare för fler räknesätt.
 5. Bygg en rövarspråksgenerator på routen: `/rovarsprak/:word`
+
+### Fortsätt experimentera
+När ni är färdiga med övningarna fortsätt experimentera och utöka. Några förslag på routes att lägga till:
+* `/palindrome/:word` Kontrollera om ordet är ett palindrom (t.ex. “level”), skriv ut “Yes” eller “No”.
+* `/count_vowels/:word` Räkna antal vokaler i ordet och skriv ut.
+* `/random_quote` Skapa en lista med tex. 5 citat. Varje gång routen anropas skrivs ett slumpmässigt citat ut.
+* `/temperature/:celsius` Konvertera Celsius till Fahrenheit och Kelvin.
+* `/word_count/:sentence` Räkna antalet ord i en mening.
